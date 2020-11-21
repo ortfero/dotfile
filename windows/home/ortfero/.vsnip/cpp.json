@@ -1,0 +1,48 @@
+{
+  "pragma": {
+    "prefix": ["pragma"],
+    "description": "C++ header",
+    "body": [
+      "#pragma once",
+      "",
+      "$1",
+      "namespace ${2:name} {",
+      "",
+      "\t$0",
+      "",
+      "} // $2",
+      ""
+    ]
+  },
+  "struct": {
+    "prefix": ["struct"],
+    "description": "structure",
+    "body": [
+      "struct ${1:name} {",
+      "",
+      "\t$0",
+      "",
+      "};",
+      ""
+    ]
+  },
+  "class": {
+    "prefix": ["class"],
+    "description": "class",
+    "body": [
+      "class ${1:name} {",
+      "public:",
+      "",
+      "\t$1() = default;",
+      "\t$1($1 const&) = default;",
+      "\t$1& operator = ($1 const&) = default;",
+      "",
+      "private:",
+      "",
+      "\t$0",
+      "};",
+      ""
+    ]
+  }
+}
+

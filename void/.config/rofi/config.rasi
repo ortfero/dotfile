@@ -1,0 +1,6 @@
+configuration {
+  modi: "drun";
+  font: "mono 18";
+  width: 600;
+  lines: 8;
+}

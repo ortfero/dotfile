@@ -14,6 +14,9 @@ alias pkg-up='sudo xbps-install -Syu'
 alias pkg-rm='sudo xbps-remove -o'
 alias pkg-find='xbps-query -Rs'
 alias pkg-files='xbps-query -f'
+alias ls='exa --icons'
+alias tree='exa --icons --tree'
+alias free='free -m'
 
 abbr -a -g gadd git add
 abbr -a -g grm git rm

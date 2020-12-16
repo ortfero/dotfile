@@ -1,3 +1,5 @@
+set -gx TERM xterm
+
 function fish_greeting
     fortune | lolcat
 end
@@ -9,15 +11,16 @@ function fish_prompt
 end
 
 
-alias pkg-add='sudo xbps-install -S'
-alias pkg-up='sudo xbps-install -Syu'
-alias pkg-rm='sudo xbps-remove -o'
-alias pkg-find='xbps-query -Rs'
-alias pkg-files='xbps-query -f'
 alias ls='exa --icons'
 alias tree='exa --icons --tree'
 alias free='free -m'
 
+abbr -a -g xi doas xbps-install -S
+abbr -a -g xu doas xbps-install -Syu
+abbr -a -g xr doas xbps-remove -o
+abbr -a -g xf xbps-query -Rs
+abbr -a -g xl xbps-query -Rf
+abbr -a -g gss git status
 abbr -a -g gadd git add
 abbr -a -g grm git rm
 abbr -a -g gct git commit -m

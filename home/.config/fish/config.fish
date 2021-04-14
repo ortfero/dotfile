@@ -28,7 +28,7 @@ abbr -ag gpll git pull
 
 
 function ls
-    exa
+    exa $argv
 end
 
 

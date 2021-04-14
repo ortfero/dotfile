@@ -72,14 +72,3 @@ function mkcd
     cd $argv
 end
 
-
-function brightness
-    if not set -q argv[1]
-        read -l brightness < /sys/class/backlight/amdgpu_bl0/brightness
-        set percents (math "round($brightness * 100 / 255)")
-        printf "brightness %d%%" $percents
-    else
-        set brightness (math "round($argv[1] * 255 / 100)")
-        echo $brightness > /sys/class/backlight/amdgpu_bl0/brightness
-    end
-end

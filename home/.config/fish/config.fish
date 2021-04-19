@@ -18,43 +18,20 @@ abbr -ag pi doas xbps-install -S
 abbr -ag pu doas xbps-install -Syu
 abbr -ag pr doas xbps-remove -o
 abbr -ag pf xbps-query -Rs
-abbr -ag pl xbps-query -Rf
+abbr -ag pfl xbps-query -Rf
 abbr -ag gst git status
 abbr -ag gadd git add
 abbr -ag grm git rm
 abbr -ag gcmt git commit -m
 abbr -ag gpsh git push
 abbr -ag gpll git pull
-
-
-function ls
-    exa $argv
-end
-
-
-function tree
-    exa --tree
-end
-
-
-function free
-    free -m
-end
-
-
-function zzz
-    doas zzz
-end
-
-
-function reboot
-    doas reboot
-end
-
-
-function halt
-    doas halt
-end
+abbr -ag free free -m
+abbr -ag ls exa
+abbr -ag tree exa --tree
+abbr -ag zzz doas zzz
+abbr -ag reboot doas reboot
+abbr -ag halt doas halt
+abbr -ag df df -h -x tmpfs
 
 
 function battery

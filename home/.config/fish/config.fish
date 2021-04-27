@@ -1,7 +1,7 @@
 set -gx TERM xterm
 
 function fish_greeting
-    fortune | lolcat
+    fortune wh40k.quotes | lolcat
 end
 
 
@@ -32,7 +32,7 @@ abbr -ag zzz doas zzz
 abbr -ag reboot doas reboot
 abbr -ag halt doas halt
 abbr -ag df df -h -x tmpfs
-
+abbr -ag weather curl wttr.in/
 
 function battery
     if test ! -e /sys/class/power_supply/BAT0/status
@@ -48,4 +48,3 @@ function mkcd
     mkdir -p $argv
     cd $argv
 end
-

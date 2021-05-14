@@ -1,0 +1,7 @@
+{
+    "autoclose": true,
+    "comment": true,
+    "tabmovement": true,
+    "tabstospaces": true,
+    "xterm": true
+}

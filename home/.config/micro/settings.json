@@ -1,6 +1,6 @@
 {
-    "autoclose": true,
-    "comment": true,
+    "linter": false,
+    "literate": false,
     "tabmovement": true,
     "tabstospaces": true,
     "xterm": true
